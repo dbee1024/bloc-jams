@@ -1,18 +1,9 @@
 var animatePoints = function() {
-    var revealPoint = function() {
-         // #7
-         $(this).css({
-             opacity: 1,
-             transform: 'scaleX(1) translateY(0)'
-         });
-    $.each($('.point'), revealPoint);
-};
-
-var animatePoints = function(points) {
-    forEach(points, revealPoint);
-     
-    };
-
+     $('.point').css({
+         opacity: 1,
+         transform: 'scaleX(1) translateY(0)'
+     });
+}
 
 $(window).load(function() {
      if ($(window).height() > 950) {
